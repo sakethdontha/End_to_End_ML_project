@@ -1,1 +1,3 @@
-from src.mlproject.config.configuration import main
+from mlproject import logger
+
+logger.info("saketh")
