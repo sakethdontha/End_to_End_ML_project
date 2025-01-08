@@ -12,7 +12,7 @@ from typing import Any
 
 
 @ensure_annotations
-def read_yaml(path_to_yaml: Path) -> ConfigBox: #configBox is used to access our value in easier way, refer trials.ipynb
+def read_yaml(path_to_yaml: Path) -> ConfigBox: #configBox is used to access our value in easier way, refer trials.ipynb, its an inbuilt return type function
     """reads yaml file and returns
 
     Args:

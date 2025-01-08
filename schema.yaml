@@ -1,0 +1,9 @@
+COLUMNS: 
+  TOEFL Score: int64  
+  University Rating: int64  
+  SOP: float64
+  LOR: float64
+  CGPA: float64
+  Research: int64
+TARGET_COLUMN:
+  Chance of Admit: float64
