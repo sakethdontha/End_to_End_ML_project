@@ -1,9 +1,9 @@
 import os
 import urllib.request as request # to directly download the data from url
-import zipfile #to unzip the file
+import zipfile # to unzip the file
 from mlproject import logger 
 from mlproject.utils.common import get_size
-from mlproject.entity.config_entity import (DataIngestionConfig)
+from mlproject.entity.config_entity import DataIngestionConfig
 from pathlib import Path
 
 

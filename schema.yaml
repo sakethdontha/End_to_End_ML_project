@@ -1,9 +1,13 @@
-COLUMNS: 
-  TOEFL Score: int64  
-  University Rating: int64  
+COLUMNS:
+  Serial No.: int64
+  GRE Score: int64
+  TOEFL Score: int64
+  University Rating: int64
   SOP: float64
-  LOR: float64
+  LOR : float64
   CGPA: float64
   Research: int64
+  Chance of Admit : float64
+
 TARGET_COLUMN:
-  Chance of Admit: float64
+  name: Chance of Admit 
