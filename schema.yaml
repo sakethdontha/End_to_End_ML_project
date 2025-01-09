@@ -10,4 +10,4 @@ COLUMNS:
   Chance of Admit : float64
 
 TARGET_COLUMN:
-  name: Chance of Admit 
+  name: Chance of Admit

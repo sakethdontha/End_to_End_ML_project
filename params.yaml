@@ -1,1 +1,4 @@
-key: value
+SVR:
+  kernel: rbf
+  C: 0.5
+  epsilon: 0.001
