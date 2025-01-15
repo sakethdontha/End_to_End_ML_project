@@ -2,10 +2,22 @@
 
 ``` bash
 git clone {repository url} 
-conda create -n mlproject python=3.12.7 -y
-conda activate mlproject
-pip install requirements.txt
 
+```
+``` bash
+conda create -n mlproject python=3.12.7 -y
+```
+``` bash
+conda activate mlproject
+```
+``` bash
+pip install requirements.txt
+```
+``` bash
+python app.py
+```
+``` bash
+Now open ur local host 0.0.0.0:8080
 ```
 
 # Workflows
