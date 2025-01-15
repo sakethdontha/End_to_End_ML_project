@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>results</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background: url("static/38437060402.png") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 150%;
+            background-color:rgba(14, 6, 160, 0.56); 
+            z-index: 0;
+        }
+
+        .top-left-image {
+            position: absolute;
+            top: -20px;
+            left: -5px;
+            width: 250px;
+            z-index: 2;
+        }
+        .top-middle-text {
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2.5vw;
+            color: rgba(240, 240, 240, 0.557);
+            z-index: 2;
+            font-weight: bold;
+            text-align: center;
+            font-family: "Trebuchet MS", Tahoma, sans-serif;
+            text-shadow: 2px 2px 8px black;
+        
+        }  
+
+</style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <a href="/" class="top-left-image">
+        <img src="static/image.png" alt="Uni-Predict Logo" class="top-left-image">
+    </a>
+    <div class="top-middle-text"> 
+        YOUR CHANCE OF ADMISSSION<br>
+        <span>is</span><br>
+        <span>{{prediction}}</span><span>%</span>
+    </div>
+</body>
+</html>
