@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 from mlproject import logger
-from sklearn.svm import SVR
+from sklearn.ensemble import GradientBoostingRegressor
 import joblib
 from mlproject.entity.config_entity import ModelTrainerConfig
 
@@ -23,7 +23,7 @@ class ModelTrainer:
         test_y = test_data[[self.config.target_column]]
 
 
-        lr = SVR(kernel=self.config.kernel, C=self.config.C, epsilon=self.config.epsilon)
+        lr = GradientBoostingRegressor(n_estimators=self.config.n_estimators, learning_rate=self.config.learning_rate, max_depth=self.config.max_depth)
         lr.fit(train_x, train_y)
 
         joblib.dump(lr, os.path.join(self.config.root_dir, self.config.model_name))

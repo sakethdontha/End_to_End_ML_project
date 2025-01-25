@@ -22,17 +22,9 @@ class DataTransformation:
 
         return data
 
-    def MinMaxScaler(self):
-        data = self.dropcolumn()
-        scaler = MinMaxScaler(feature_range=(0, 1))
-        data["GRE Score"] = scaler.fit_transform(data[["GRE Score"]])
-        data["TOEFL Score"] = scaler.fit_transform(data[["TOEFL Score"]])
-
-        return data
-
 
     def train_test_spliting(self):
-        data = self.MinMaxScaler()
+        data = self.dropcolumn()
 
         # Split the data into training and test sets. (0.75, 0.25) split.
         train, test = train_test_split(data,test_size=0.2,random_state=42)

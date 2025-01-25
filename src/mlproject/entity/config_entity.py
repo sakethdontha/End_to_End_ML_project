@@ -29,9 +29,10 @@ class ModelTrainerConfig:
     train_data_path: Path
     test_data_path: Path
     model_name: str
-    kernel: str
-    C: float
-    epsilon: float
+    n_estimators: float
+    learning_rate: float
+    max_depth: float
+    random_state: float
     target_column: str
 
 @dataclass(frozen=True)
