@@ -8,4 +8,4 @@ RUN pip install -r requirements.txt
 
 CMD ["python3", "app.py"]
 
-#to get docker image, python version changed
+#to get docker image,we use slim docker
